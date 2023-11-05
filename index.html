@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style> </head>
+  <body class="w3-light-grey">
+    <h2>Resume</h2>
+    <p>Information Button:</p>
+    <div class="tab"> <button class="tablinks" onclick="openCity(event, 'London')">Expereince</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Education</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">CONTACT</button>
+    </div>
+    <div id="London" class="tabcontent">
+      <h3>Expereince</h3>
+      <p>Information Management: I control and maintain the company's
+        information systems. Including storage and bibliography of important
+        information. I use a data storage system and search engine to provide
+        users with the information they need quickly and efficiently.</p>
+    </div>
+    <div id="Paris" class="tabcontent">
+      <h3>Education</h3>
+      <p>achelor's degree 2021-2024 Bachelor of Arts, Information -Technology
+        and Librarianship -Silpakorn university secondary education 2015 - 2020
+        -Major science and math stream 12th grade -SarasitPhittayalai School
+        Primary education 2010 - 2014 -SarasitPhittayalai School</p>
+    </div>
+    <div id="Tokyo" class="tabcontent">
+      <h3>CONTACT</h3>
+      <p>Arunrat_A2@silpakorn.edu tel0840486211&gt; </p>
+      <p> tel0840486211&gt; </p>
+    </div>
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script> <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>W3.CSS Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style> <link type="text/css" rel="stylesheet" href="script.js">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third">
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+              <h4> <img src="images/206628388_206391268032767_735113907942832711_n.jpg"
+                  style="width: 444px; height: 487px;" alt="Avatar">Aungkriz
+                Arunrat</h4>
+            </div>
+            <div class="w3-container">
+              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web
+                developer</p>
+              <p>77/5 Kanchanaburi, Tamaka District ,Sang Chuto Road ,Thailand,
+                Bangkok</p>
+              <p><a href="mailto:Arunrat_A2@silpakorn.edu%20%20%20%20%20%20%20">Arunrat_A2@silpakorn.edu</a></p>
+              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>084-0486211</p>
+              <hr>
+              <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+              <p>Drawing</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width: 90%;">90%</div>
+              </div>
+              <p>Photography</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                  <div class="w3-center w3-text-white">80%</div>
+                </div>
+              </div>
+              <p>Media</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+              </div>
+              <p>Illustrator</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+              </div>
+              <br>
+              <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+              <p>English</p>
+              <div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+              </div>
+              <p>Chinese</p>
+              <div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+              </div>
+              <p>Japanese</p>
+              <div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+              </div>
+              <br>
+            </div>
+          </div>
+          <br>
+          <!-- End Left Column --> </div>
+        <!-- Right Column -->
+        <div class="w3-twothird">
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+              Experience</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>&nbsp;Librarian and data preserver/ in
+                  library of Silpakorn university university <br>
+                </b></h5>
+              <h6 class="w3-text-teal">Jan 2021 - <span class="w3-tag w3-teal w3-round">2022</span></h6>
+              <p>Information Management: I control and maintain the company's
+                information systems. Including storage and bibliography of
+                important information. I use a data storage system and search
+                engine to provide users with the information they need quickly
+                and efficiently </p>
+              <h5 class="w3-opacity"><b>University activities / Silpakorn
+                  university</b></h5>
+            </div>
+            <div class="w3-container">
+              <h6 class="w3-text-teal">Mar 2021- Dec 2022</h6>
+              <p>Working in the Silpakorn University library </p>
+              <p>- Position: Assistant Librarian - Duration: Work available
+                since 2021-2022 </p>
+              <p>- Job Description: I am responsible for arranging books and
+                literature for students and teachers. and assist in managing
+                library activities, such as creating exhibitions and training in
+                using online databases</p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Graphic web Designer / dokkan wikifandom</b></h5>
+              <h6 class="w3-text-teal">Jun 2020 - Mar 2021</h6>
+              <p>I have experience working as a Graphic Web Designer at Dokkan
+                Wiki Fandom, an organization that provides information and
+                content about the online game Dragon Ball Z Dokkan Battle, which
+                is rapidly growing in users and community every day. Working in
+                a fast-paced environment is both challenging and fun. I was
+                responsible for the graphics and website design to provide
+                quality information to our users. </p>
+              <p>-Features and Abilities] Experience in graphic design for
+                online media such as posters, websites, and advertising media. </p>
+              <p>-Proficient in using design tools such as Adobe Photoshop,
+                Illustrator, and others. </p>
+              <p>-Knowledge of writing HTML, CSS, and JavaScript.<br>
+              </p>
+              <br>
+            </div>
+          </div>
+          <div class="w3-container w3-card w3-white">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Bachelor's degree <br>
+                </b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021-2024</h6>
+              <p>Bachelor of Arts, Information</p>
+              <p> -Technology and Librarianship </p>
+              <p>-Silpakorn university</p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>secondary education</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015
+                - 2020</h6>
+              <p>-Major science and math stream 12th grade</p>
+              <p>-SarasitPhittayalai School</p>
+              <hr> </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Primary education</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010
+                - 2014</h6>
+              <p>-SarasitPhittayalai School </p>
+              <br>
+            </div>
+          </div>
+          <!-- End Right Column --> </div>
+        <!-- End Grid --> </div>
+      <!-- End Page Container --> </div>
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+      <div class="w3-row-padding">
+        <div class="w3-container w3-third"> <img src="../Users/USER/Downloads/sarasit.jpg"
+            style="width:100%" onclick="onClick(this)" title="Education sarasit">
+        </div>
+        <div class="w3-container w3-third"> <img src="../Users/USER/Downloads/sil.jpg"
+            style="width: 100%;" onclick="onClick(this)" title="silapakorEducation">
+        </div>
+        <div class="w3-container w3-third"> <img src="../Users/USER/Downloads/codin.jpg"
+            style="width: 100%;" onclick="onClick(this)" title="coding"> </div>
+      </div>
+      <div id="modal01" class="w3-modal" onclick="this.style.display='none'"> <img
+          class="w3-modal-content" id="img01" style="width:100%"> </div>
+      <script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script> <p>Find me on social media.</p>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i> <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <p><br>
+      </p>
+    </footer>
+  </body>
+</html>
